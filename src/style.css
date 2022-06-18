@@ -1,0 +1,29 @@
+body {
+    background-color: yellow;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border: 2px solid black;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.aboutText {
+    visibility: hidden;
+}
+
+.recipesText {
+    visibility: hidden;
+}
+
+.contactText {
+    visibility: hidden;
+}
