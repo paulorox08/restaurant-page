@@ -6,7 +6,7 @@ function skeleton() {
     
     const header = document.createElement('div');
     header.className = "header";
-    header.innerText = "Eggcellence"
+    header.innerText = "Eggcellence";
 
     content.appendChild(header);
 
@@ -32,6 +32,12 @@ function skeleton() {
     contact.innerText = "Contact Us";
 
     tabs.appendChild(contact);
+
+    const footer = document.createElement('div');
+    footer.className = "footer";
+    footer.innerText = "Copyright Paulo Adeva"
+
+    content.appendChild(footer);
 
 };
 
@@ -60,13 +66,33 @@ function body() {
 
 body();
 
-function showAbout() {
+function showContent() {
     const about = document.querySelector('.about');
     const aboutText = document.querySelector('.aboutText');
 
+    const recipes = document.querySelector('.recipes');
+    const recipesText = document.querySelector('.recipesText');
+
+    const contact = document.querySelector('.contact');
+    const contactText = document.querySelector('.contactText');
+
     about.addEventListener('click', () => {
-        aboutText.style.visibility = "visible";
+        aboutText.style.display = "initial";
+        recipesText.style.display = "none";
+        contactText.style.display = "none";
+    })
+
+    recipes.addEventListener('click', () => {
+        recipesText.style.display = "initial";
+        aboutText.style.display = "none";
+        contactText.style.display = "none";
+    })
+
+    contact.addEventListener('click', () => {
+        contactText.style.display = "initial";
+        aboutText.style.display = "none";
+        recipesText.style.display = "none";
     })
 }
 
-showAbout();
+showContent();

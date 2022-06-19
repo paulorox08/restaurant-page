@@ -1,5 +1,7 @@
 body {
     background-color: yellow;
+    height: 100vh;
+    overflow: auto;
 }
 
 .content {
@@ -9,21 +11,35 @@ body {
 
 .header {
     border: 2px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
 }
 
 .tabs {
     display: flex;
     gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutText {
-    visibility: hidden;
+    display: none;
 }
 
 .recipesText {
-    visibility: hidden;
+    display: none;
 }
 
 .contactText {
-    visibility: hidden;
+    display: none;
 }
