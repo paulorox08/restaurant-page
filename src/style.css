@@ -1,5 +1,9 @@
-body {
-    background-color: yellow;
+:root {
+    --background-colour: yellow;
+}
+     
+    body {
+    background-color: var(--background-colour);
     height: 100vh;
     overflow: auto;
 }
@@ -13,6 +17,7 @@ body {
     border: 2px solid black;
     width: 100%;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .footer {
@@ -32,14 +37,16 @@ body {
     align-items: center;
 }
 
-.aboutText {
-    display: none;
+.about {
+    border: 1px solid black;
 }
 
-.recipesText {
-    display: none;
+.recipes,
+.contact {
+    border: 1px solid var(--background-colour);
 }
 
+.recipesText,
 .contactText {
     display: none;
 }

@@ -23,7 +23,7 @@ function skeleton() {
 
     const recipes = document.createElement('div');
     recipes.className = 'recipes';
-    recipes.innerText = "Recipes";
+    recipes.innerText = "Menu";
 
     tabs.appendChild(recipes);
 
@@ -53,7 +53,7 @@ function body() {
 
     const recipesText = document.createElement('div');
     recipesText.className = "recipesText";
-    recipesText.innerText = "This is the recipes page";
+    recipesText.innerText = "This is the menu page";
 
     content.appendChild(recipesText);
 
@@ -77,18 +77,27 @@ function showContent() {
     const contactText = document.querySelector('.contactText');
 
     about.addEventListener('click', () => {
+        about.style.border = "1px solid black";
+        recipes.style.border = "1px solid var(--background-colour)";
+        contact.style.border = "1px solid var(--background-colour)";
         aboutText.style.display = "initial";
         recipesText.style.display = "none";
         contactText.style.display = "none";
     })
 
     recipes.addEventListener('click', () => {
+        recipes.style.border = "1px solid black";
+        about.style.border = "1px solid var(--background-colour)";
+        contact.style.border = "1px solid var(--background-colour)";
         recipesText.style.display = "initial";
         aboutText.style.display = "none";
         contactText.style.display = "none";
     })
 
     contact.addEventListener('click', () => {
+        contact.style.border = "1px solid black";
+        about.style.border = "1px solid var(--background-colour)";
+        recipes.style.border = "1px solid var(--background-colour)";
         contactText.style.display = "initial";
         aboutText.style.display = "none";
         recipesText.style.display = "none";
