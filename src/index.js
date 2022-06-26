@@ -1,4 +1,5 @@
 import './style.css';
+import logo from './logo.png';
 
 import { createAbout } from './about';
 import { createContacts } from './contacts';
@@ -10,7 +11,15 @@ function skeleton() {
     
     const header = document.createElement('div');
     header.className = "header";
-    header.innerText = "Eggcellence";
+
+    const headerText = document.createElement('div');
+    headerText.className = "headerText";
+    headerText.innerText = "Eggcellence";
+    header.appendChild(headerText);
+
+    // const myLogo = new Image();
+    // myLogo.src = logo;
+    // header.appendChild(myLogo);
 
     content.appendChild(header);
 

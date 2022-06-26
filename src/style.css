@@ -15,10 +15,27 @@ body {
 
 .header {
     border: 2px solid black;
+    height: 200px;
     width: 100%;
     text-align: center;
     margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.headerText {
+    z-index: 1;
+    background: url('./logo.png');
+    background-repeat: no-repeat;
+}
+
+/* img {
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+} */
 
 .footer {
     position: absolute;
