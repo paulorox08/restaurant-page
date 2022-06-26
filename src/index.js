@@ -1,5 +1,5 @@
 import './style.css';
-import logo from './logo.png';
+// import logo from './logo.png';
 
 import { createAbout } from './about';
 import { createContacts } from './contacts';

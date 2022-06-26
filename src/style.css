@@ -6,6 +6,8 @@ body {
     background-color: var(--background-colour);
     height: 100vh;
     overflow: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .content {
@@ -14,8 +16,7 @@ body {
 }
 
 .header {
-    border: 2px solid black;
-    height: 200px;
+    height: 150px;
     width: 100%;
     text-align: center;
     margin-bottom: 1em;
@@ -23,13 +24,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: url('./logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 125px;
+    
 }
 
 .headerText {
-    z-index: 1;
-    background: url('./logo.png');
-    background-repeat: no-repeat;
+    font-family: 'Smooch', cursive;
+    font-size: 69px;
 }
+
 
 /* img {
     width: 200px;
@@ -40,7 +46,6 @@ body {
 .footer {
     position: absolute;
     bottom: 0;
-    padding: 1em;
     width: 100%;
     text-align: center;
 }
