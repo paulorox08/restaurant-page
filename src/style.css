@@ -2,7 +2,7 @@
     --background-colour: yellow;
 }
      
-    body {
+body {
     background-color: var(--background-colour);
     height: 100vh;
     overflow: auto;
@@ -39,14 +39,21 @@
 
 .about {
     border: 1px solid black;
+    cursor: pointer;
 }
 
 .recipes,
 .contact {
+    cursor: pointer;
     border: 1px solid var(--background-colour);
+}
+
+.aboutText {
+    text-align: center;
 }
 
 .recipesText,
 .contactText {
     display: none;
+    text-align: center;
 }

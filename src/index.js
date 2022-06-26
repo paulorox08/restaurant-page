@@ -1,5 +1,9 @@
 import './style.css';
 
+import { createAbout } from './about';
+import { createContacts } from './contacts';
+import { createRecipes } from './recipes';
+
 const content = document.querySelector('.content');
 
 function skeleton() {
@@ -43,29 +47,6 @@ function skeleton() {
 
 skeleton();
 
-function body() {
-
-    const aboutText = document.createElement('div');
-    aboutText.className = "aboutText";
-    aboutText.innerText = "This is the abouts page";
-
-    content.appendChild(aboutText);
-
-    const recipesText = document.createElement('div');
-    recipesText.className = "recipesText";
-    recipesText.innerText = "This is the menu page";
-
-    content.appendChild(recipesText);
-
-    const contactText = document.createElement('div');
-    contactText.className = "contactText";
-    contactText.innerText = "This is the contacts page";
-
-    content.appendChild(contactText);
-}
-
-body();
-
 function showContent() {
     const about = document.querySelector('.about');
     const aboutText = document.querySelector('.aboutText');
@@ -103,5 +84,9 @@ function showContent() {
         recipesText.style.display = "none";
     })
 }
+
+createAbout();
+createRecipes();
+createContacts();
 
 showContent();
