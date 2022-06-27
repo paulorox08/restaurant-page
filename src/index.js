@@ -21,7 +21,7 @@ function skeleton() {
     const tabs = document.createElement('div');
     tabs.className = "tabs";
     
-    header.appendChild(tabs);
+    content.appendChild(tabs);
 
     const about = document.createElement('div');
     about.className = "about";
