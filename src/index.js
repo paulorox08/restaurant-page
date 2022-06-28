@@ -1,6 +1,9 @@
 import './style.css';
 
 import { createAbout } from './about';
+import { createAboutText } from './about';
+import { createAboutLocation } from './about';
+
 import { createContacts } from './contacts';
 import { createRecipes } from './recipes';
 
@@ -46,19 +49,19 @@ skeleton();
 
 function showContent() {
     const about = document.querySelector('.about');
-    const aboutContainer = document.querySelector('.aboutText');
+    const aboutContainer = document.querySelector('.aboutContainer');
 
     const recipes = document.querySelector('.recipes');
-    const recipesContainer = document.querySelector('.recipesText');
+    const recipesContainer = document.querySelector('.recipesContainer');
 
     const contact = document.querySelector('.contact');
-    const contactContainer = document.querySelector('.contactText');
+    const contactContainer = document.querySelector('.contactContainer');
 
     about.addEventListener('click', () => {
         about.style.borderBottom = "3px solid black";
         recipes.style.borderBottom = "3px solid var(--header-colour)";
         contact.style.borderBottom = "3px solid var(--header-colour)";
-        aboutContainer.style.display = "initial";
+        aboutContainer.style.display = "inherit";
         recipesContainer.style.display = "none";
         contactContainer.style.display = "none";
     })
@@ -67,7 +70,7 @@ function showContent() {
         recipes.style.borderBottom = "3px solid black";
         about.style.borderBottom = "3px solid var(--header-colour)";
         contact.style.borderBottom = "3px solid var(--header-colour)";
-        recipesContainer.style.display = "initial";
+        recipesContainer.style.display = "inherit";
         aboutContainer.style.display = "none";
         contactContainer.style.display = "none";
     })
@@ -76,13 +79,16 @@ function showContent() {
         contact.style.borderBottom = "3px solid black";
         about.style.borderBottom = "3px solid var(--header-colour)";
         recipes.style.borderBottom = "3px solid var(--header-colour)";
-        contactContainer.style.display = "initial";
+        contactContainer.style.display = "inherit";
         aboutContainer.style.display = "none";
         recipesContainer.style.display = "none";
     })
 }
 
 createAbout();
+createAboutText();
+createAboutLocation();
+
 createRecipes();
 createContacts();
 

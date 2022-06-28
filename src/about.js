@@ -5,6 +5,12 @@ const createAbout = () => {
     aboutContainer.className = "aboutContainer";
 
     content.appendChild(aboutContainer);
+}
+
+export {createAbout};
+
+const createAboutText = () => {
+    const aboutContainer = document.querySelector('.aboutContainer');
 
     const aboutText = document.createElement('div');
     aboutText.className = "aboutText";
@@ -13,4 +19,16 @@ const createAbout = () => {
     aboutContainer.appendChild(aboutText);
 }
 
-export {createAbout};
+export {createAboutText};
+
+const createAboutLocation = () => {
+    const aboutContainer = document.querySelector('.aboutContainer');
+
+    const aboutLocation = document.createElement('div');
+    aboutLocation.className = "aboutLocation";
+    aboutLocation.innerText = "122 Shepherds Drive"
+
+    aboutContainer.appendChild(aboutLocation);
+}
+
+export {createAboutLocation};
