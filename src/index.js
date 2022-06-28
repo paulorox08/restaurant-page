@@ -1,8 +1,6 @@
 import './style.css';
 
-import { createAbout } from './about';
-import { createAboutText } from './about';
-import { createAboutLocation } from './about';
+import { createAbout, createAboutText, createAboutTextText, createAboutLocation, createAboutTime } from './about';
 
 import { createContacts } from './contacts';
 import { createRecipes } from './recipes';
@@ -87,7 +85,9 @@ function showContent() {
 
 createAbout();
 createAboutText();
+createAboutTextText();
 createAboutLocation();
+createAboutTime();
 
 createRecipes();
 createContacts();
