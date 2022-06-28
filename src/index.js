@@ -1,4 +1,5 @@
 import './style.css';
+import './aboutSection.css';
 
 import { createAbout, createAboutText, createAboutTextText, createAboutLocation, createAboutTime } from './about';
 
