@@ -80,17 +80,28 @@ const createAboutTime = () => {
 
     aboutText.appendChild(aboutTime);
 
+    const timeLogo = document.createElement('div');
+    timeLogo.className = "time material-symbols-outlined";
+    timeLogo.innerText = "schedule";
+
+    aboutTime.appendChild(timeLogo);
+
+    const times = document.createElement('div');
+    times.className = "times";
+
+    aboutTime.appendChild(times);
+
     const timeOne = document.createElement('li');
     timeOne.className = "timeOne";
     timeOne.innerText = "Mon - Fri: 7am - 10pm";
 
-    aboutTime.appendChild(timeOne);
+    times.appendChild(timeOne);
 
     const timeTwo = document.createElement('li');
     timeTwo.className = "timeTwo";
     timeTwo.innerText = "Sat & Sun: 8am - 7pm";
 
-    aboutTime.appendChild(timeTwo);
+    times.appendChild(timeTwo);
 }
 
 export {createAboutTime};
