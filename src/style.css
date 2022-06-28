@@ -1,5 +1,6 @@
 :root {
-    --background-colour: yellow;
+    --background-colour: #fefae0;
+    --header-colour: #ccd5ae;
 }
      
 body {
@@ -16,14 +17,11 @@ body {
 }
 
 .header {
+    background-color: var(--header-colour);
     height: 100px;
     width: 100%;
     text-align: center;
     align-items: center;
-    background: url('./logo.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,42 +31,62 @@ body {
 .headerText {
     font-family: 'Smooch', cursive;
     font-size: 69px;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    background: url('./logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75px;
 }
 
 .tabs {
+    padding-top: 10px;
     display: flex;
     gap: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 5px outset gray;
+    background-color: var(--header-colour);
 }
 
+.about,
+.recipes,
+.contact {
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    padding-bottom: 0%;
+    border-radius: 5px;
+}
 .about {
-    border: 1px solid black;
+    border-bottom: 3px solid black;
     cursor: pointer;
 }
 
 .recipes,
 .contact {
     cursor: pointer;
-    border: 1px solid var(--background-colour);
+    border-bottom: 3px solid var(--header-colour);
+}
+
+.aboutContainer {
+    text-align: center;
+    height: calc(100vh - 143px);
+    background-image: url('./estudio-bloom-oj9-77qT3i0-unsplash.jpg');
+    background-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipesContainer,
+.contactContainer {
+    display: none;
+    text-align: center;
 }
 
 .aboutText {
-    text-align: center;
-}
-
-.recipesText,
-.contactText {
-    display: none;
-    text-align: center;
+    font-size: 48px;
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.3);
 }
