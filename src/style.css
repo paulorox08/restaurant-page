@@ -2,11 +2,8 @@
     --background-colour: #fefae0;
     --header-colour: #ccd5ae;
 }
-     
+
 body {
-    background-color: var(--background-colour);
-    height: 100vh;
-    overflow: auto;
     margin: 0;
     padding: 0;
 }
@@ -14,6 +11,8 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    background-color: var(--background-colour);
+    height: 100vh;
 }
 
 .header {
@@ -67,3 +66,8 @@ body {
     border-bottom: 3px solid var(--header-colour);
 }
 
+.recipesContainer,
+.contactContainer {
+    display: none;
+    text-align: center;
+}

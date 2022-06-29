@@ -25,7 +25,7 @@ const createAboutTextText = () => {
 
     const aboutTextText = document.createElement('div');
     aboutTextText.className = "aboutTextText";
-    aboutTextText.innerText = "From omelettes to soufles, we have a dish for you!"
+    aboutTextText.innerText = "From omelettes to souflés, we have the perfect egg dish for you!"
 
     aboutText.appendChild(aboutTextText);
 }

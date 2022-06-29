@@ -1,26 +1,19 @@
 .aboutContainer {
     text-align: center;
-    height: calc(100vh - 140px);
+    height: 100%;
     background-color: black;
     background-image: url('./egg6.jpg');
     background-size: 110%;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-}
-
-.recipesContainer,
-.contactContainer {
-    display: none;
-    text-align: center;
 }
 
 .aboutText {
-    width: 50%;
+    width: 60%;
+    height: auto;
     padding: 20px;
     font-family: 'Poppins', sans-serif;
     background: rgba(0, 0, 0, 0.7);
