@@ -1,0 +1,18 @@
+.recipesContainer {
+    text-align: center;
+    height: 100%;
+    background-color: black;
+    background-image: url('./egg6.jpg');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipesText {
+    background: rgba(0, 0, 0, 0.7);
+    width: 60%;
+    height: 90%;
+}

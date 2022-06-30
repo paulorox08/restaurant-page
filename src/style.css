@@ -52,7 +52,7 @@ body {
 .contact {
     font-family: 'Poppins', sans-serif;
     padding: 5px;
-    padding-bottom: 0%;
+    padding-bottom: 0;
     border-radius: 5px;
 }
 .about {

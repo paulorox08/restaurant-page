@@ -1,10 +1,13 @@
 import './style.css';
 import './aboutSection.css';
+import './menuSection.css';
 
 import { createAbout, createAboutText, createAboutTextText, createAboutLocation, createAboutTime } from './about';
 
 import { createContacts } from './contacts';
+
 import { createRecipes } from './recipes';
+import { createRecipesText } from './recipes';
 
 const content = document.querySelector('.content');
 
@@ -69,7 +72,7 @@ function showContent() {
         recipes.style.borderBottom = "3px solid black";
         about.style.borderBottom = "3px solid var(--header-colour)";
         contact.style.borderBottom = "3px solid var(--header-colour)";
-        recipesContainer.style.display = "inherit";
+        recipesContainer.style.display = "flex";
         aboutContainer.style.display = "none";
         contactContainer.style.display = "none";
     })
@@ -91,6 +94,9 @@ createAboutLocation();
 createAboutTime();
 
 createRecipes();
+createRecipesText();
+
+
 createContacts();
 
 showContent();
