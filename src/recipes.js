@@ -34,11 +34,16 @@ export { createRecipesTitle };
 
 const createActualRecipes = () => {
     const recipesText = document.querySelector('.recipesText');
+
+    const actualRecipes = document.createElement('div');
+    actualRecipes.className = "actualRecipes";
+
+    recipesText.appendChild(actualRecipes)
     
     const actualRecipeImages = document.createElement('div');
     actualRecipeImages.className = "actualRecipeImages";
     
-    recipesText.appendChild(actualRecipeImages);
+    actualRecipes.appendChild(actualRecipeImages);
 
     let j = 0;
     while (j < 11) {
@@ -52,7 +57,7 @@ const createActualRecipes = () => {
     const actualRecipeDesc = document.createElement('div');
     actualRecipeDesc.className = "actualRecipeDesc";
     
-    recipesText.appendChild(actualRecipeDesc);
+    actualRecipes.appendChild(actualRecipeDesc);
 
     let i = 0;
     while (i < 11) {
