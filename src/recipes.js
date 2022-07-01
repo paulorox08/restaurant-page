@@ -35,8 +35,34 @@ export { createRecipesTitle };
 const createActualRecipes = () => {
     const recipesText = document.querySelector('.recipesText');
     
-    const actualRecipes = document.createElement('div');
-    actualRecipes.className = "actualRecipes";
+    const actualRecipeImages = document.createElement('div');
+    actualRecipeImages.className = "actualRecipeImages";
     
-    recipesText.appendChild(actualRecipes);
+    recipesText.appendChild(actualRecipeImages);
+
+    let j = 0;
+    while (j < 11) {
+        let recipeImage = document.createElement('div');
+        recipeImage.className = `recipeImage ${j}`;
+
+        actualRecipeImages.appendChild(recipeImage);
+        j ++;
+    }
+
+    const actualRecipeDesc = document.createElement('div');
+    actualRecipeDesc.className = "actualRecipeDesc";
+    
+    recipesText.appendChild(actualRecipeDesc);
+
+    let i = 0;
+    while (i < 11) {
+        let recipeDesc = document.createElement('div');
+        recipeDesc.className = `recipeDesc ${i}`;
+
+        actualRecipeDesc.appendChild(recipeDesc);
+        i ++;
+    }
+
 }
+
+export {createActualRecipes}

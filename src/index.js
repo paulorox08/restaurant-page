@@ -8,6 +8,8 @@ import { createContacts } from './contacts';
 
 import { createRecipes } from './recipes';
 import { createRecipesText } from './recipes';
+import { createRecipesTitle } from './recipes';
+import { createActualRecipes } from './recipes';
 
 const content = document.querySelector('.content');
 
@@ -95,6 +97,9 @@ createAboutTime();
 
 createRecipes();
 createRecipesText();
+createRecipesTitle();
+createActualRecipes();
+
 
 
 createContacts();
