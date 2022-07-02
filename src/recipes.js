@@ -39,33 +39,19 @@ const createActualRecipes = () => {
     actualRecipes.className = "actualRecipes";
 
     recipesText.appendChild(actualRecipes)
-    
-    const actualRecipeImages = document.createElement('div');
-    actualRecipeImages.className = "actualRecipeImages";
-    
-    actualRecipes.appendChild(actualRecipeImages);
 
     let j = 0;
     while (j < 11) {
         let recipeImage = document.createElement('div');
         recipeImage.className = `recipeImage ${j}`;
 
-        actualRecipeImages.appendChild(recipeImage);
-        j ++;
-    }
+        actualRecipes.appendChild(recipeImage);
 
-    const actualRecipeDesc = document.createElement('div');
-    actualRecipeDesc.className = "actualRecipeDesc";
-    
-    actualRecipes.appendChild(actualRecipeDesc);
-
-    let i = 0;
-    while (i < 11) {
         let recipeDesc = document.createElement('div');
-        recipeDesc.className = `recipeDesc ${i}`;
+        recipeDesc.className = `recipeDesc ${j}`;
 
-        actualRecipeDesc.appendChild(recipeDesc);
-        i ++;
+        actualRecipes.appendChild(recipeDesc);
+        j ++;
     }
 
 }

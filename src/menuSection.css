@@ -14,7 +14,7 @@
 
 .recipesText {
     background: rgba(0, 0, 0, 0.7);
-    width: auto;
+    width: 60%;
     padding: 1%;
     margin-top: 3%;
     height: 90%;
@@ -22,6 +22,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .recipesTitle {
@@ -38,16 +39,14 @@
     gap: 10px;
 }
 
-.actualRecipeImages,
-.actualRecipeDesc {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
 .recipeImage,
 .recipeDesc {
-    width: 100px;
-    height: 100px;
-    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+}
+
+[class = "recipeImage 1"] {
+    background-image: url('./egg-bacon-pancake.jpg');
+    background-size: 100%;
 }
