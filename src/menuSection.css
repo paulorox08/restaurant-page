@@ -13,8 +13,10 @@
 
 .recipesText {
     background: rgba(0, 0, 0, 0.7);
-    width: 60%;
-    height: 90%;
+    width: auto;
+    padding: 1%;
+    margin-top: 3%;
+    height: auto;
     display: flex;
     text-align: center;
     display: flex;
@@ -30,7 +32,16 @@
 .actualRecipes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 10px;
+}
+
+.actualRecipeImages,
+.actualRecipeDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .recipeImage,
