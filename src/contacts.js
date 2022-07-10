@@ -47,32 +47,37 @@ export {phoneAndEmail};
 const leaveAMessage = () => {
     const contactsText = document.querySelector('.contactsText');
 
+    const leaveAMessage = document.createElement('div');
+    leaveAMessage.className = "leaveAMessage";
+    
+    contactsText.appendChild(leaveAMessage);
+
     const title = document.createElement('div');
     title.className = "title";
     title.innerText = "Leave a message below!";
 
-    contactsText.appendChild(title);
+    leaveAMessage.appendChild(title);
 
     const name = document.createElement('input');
     name.className = "name";
     name.setAttribute("type", "text");
     name.setAttribute("placeholder", "Name")
 
-    title.appendChild(name);
+    leaveAMessage.appendChild(name);
 
     const email = document.createElement('input');
     email.className = "email";
     email.setAttribute("type", "email");
     email.setAttribute("placeholder", "Email");
 
-    title.appendChild(email);
+    leaveAMessage.appendChild(email);
 
     const message = document.createElement('input');
     message.className = "message";
     message.setAttribute("type", "text");
     message.setAttribute("placeholder", "What is your question?");
 
-    contactsText.appendChild(message);
+    leaveAMessage.appendChild(message);
 
 }
 
