@@ -10,6 +10,7 @@ import { createRecipes } from './recipes';
 import { createRecipesText } from './recipes';
 import { createRecipesTitle } from './recipes';
 import { createActualRecipes } from './recipes';
+import { nameAndPrice } from './recipes';
 
 const content = document.querySelector('.content');
 
@@ -99,6 +100,7 @@ createRecipes();
 createRecipesText();
 createRecipesTitle();
 createActualRecipes();
+nameAndPrice();
 
 
 
