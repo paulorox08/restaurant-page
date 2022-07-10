@@ -61,22 +61,22 @@ export {createActualRecipes}
 
 const nameAndPrice = () => {
     const eggsPancake = document.querySelector(".recipeDesc0");
-    eggsPancake.innerText = "Eggs and Pancake Stack $18.00";
+    eggsPancake.innerHTML = "Eggs and Pancake Stack <br /> $14.00";
 
     const boiledEggs = document.querySelector(".recipeDesc1");
-    boiledEggs.innerText = "Boiled Eggs";
+    boiledEggs.innerHTML = "Boiled Eggs <br /> $2.00/egg";
 
     const eggsNoodles = document.querySelector(".recipeDesc2");
-    eggsNoodles.innerText = "Eggs with Noodles";
+    eggsNoodles.innerHTML = "Eggs with Noodles <br /> $18.00";
 
     const eggsBacon = document.querySelector(".recipeDesc3");
-    eggsBacon.innerText = "Eggs and Bacon";
+    eggsBacon.innerHTML = "Eggs and Bacon <br /> $8.00";
 
     const eggsBeansToast = document.querySelector(".recipeDesc4");
-    eggsBeansToast.innerText = "Eggs with Beans and Toast";
+    eggsBeansToast.innerHTML = "Eggs with Beans and Toast <br /> $12.00";
 
     const eggsBenedict = document.querySelector(".recipeDesc5");
-    eggsBenedict.innerText = "Eggs Benedict";
+    eggsBenedict.innerHTML = "Eggs Benedict <br /> $15.00";
 
 }
 
