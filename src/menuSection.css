@@ -23,6 +23,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .recipesText::-webkit-scrollbar {
@@ -32,6 +33,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     color: white;
+    padding: 10px;
 }
 
 .actualRecipes {
@@ -45,7 +47,7 @@
 .recipeImage {
     width: 200px;
     height: 200px;
-    border: 1px solid white;
+    border-radius: 5px;
 }
 
 [class = "recipeImage 0"] {
@@ -86,11 +88,13 @@
 .recipeDesc4,
 .recipeDesc5 {
     width: 200px;
-    height: 200px;
+    height: auto;
     font-family: 'Poppins', sans-serif;
     color: white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
 }

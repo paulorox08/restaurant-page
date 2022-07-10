@@ -1,0 +1,39 @@
+.contactsContainer {
+    text-align: center;
+    height: 100%;
+    background-color: black;
+    background-image: url('./egg6.jpg');
+    background-size: 110%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contactsText {
+    background: rgba(0, 0, 0, 0.7);
+    width: 40%;
+    padding: 1%;
+    margin-top: 3%;
+    height: 90%;
+    overflow: auto;
+    display: flex;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.contactsTitle {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 36px
+}
+
+.phoneAndEmail {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+}

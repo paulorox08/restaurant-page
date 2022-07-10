@@ -1,16 +1,17 @@
 import './style.css';
 import './aboutSection.css';
 import './menuSection.css';
+import './contacts.css'
 
 import { createAbout, createAboutText, createAboutTextText, createAboutLocation, createAboutTime } from './about';
 
 import { createContacts } from './contacts';
+import { createContactsText } from './contacts';
+import { createContactsTitle } from './contacts';
+import { phoneAndEmail } from './contacts';
+import { leaveAMessage } from './contacts';
 
-import { createRecipes } from './recipes';
-import { createRecipesText } from './recipes';
-import { createRecipesTitle } from './recipes';
-import { createActualRecipes } from './recipes';
-import { nameAndPrice } from './recipes';
+import { createRecipes, createRecipesText, createRecipesTitle, createActualRecipes, nameAndPrice } from './recipes';
 
 const content = document.querySelector('.content');
 
@@ -60,7 +61,7 @@ function showContent() {
     const recipesContainer = document.querySelector('.recipesContainer');
 
     const contact = document.querySelector('.contact');
-    const contactContainer = document.querySelector('.contactContainer');
+    const contactsContainer = document.querySelector('.contactsContainer');
 
     about.addEventListener('click', () => {
         about.style.borderBottom = "3px solid black";
@@ -68,7 +69,7 @@ function showContent() {
         contact.style.borderBottom = "3px solid var(--header-colour)";
         aboutContainer.style.display = "inherit";
         recipesContainer.style.display = "none";
-        contactContainer.style.display = "none";
+        contactsContainer.style.display = "none";
     })
 
     recipes.addEventListener('click', () => {
@@ -77,14 +78,14 @@ function showContent() {
         contact.style.borderBottom = "3px solid var(--header-colour)";
         recipesContainer.style.display = "flex";
         aboutContainer.style.display = "none";
-        contactContainer.style.display = "none";
+        contactsContainer.style.display = "none";
     })
 
     contact.addEventListener('click', () => {
         contact.style.borderBottom = "3px solid black";
         about.style.borderBottom = "3px solid var(--header-colour)";
         recipes.style.borderBottom = "3px solid var(--header-colour)";
-        contactContainer.style.display = "inherit";
+        contactsContainer.style.display = "inherit";
         aboutContainer.style.display = "none";
         recipesContainer.style.display = "none";
     })
@@ -102,8 +103,10 @@ createRecipesTitle();
 createActualRecipes();
 nameAndPrice();
 
-
-
 createContacts();
+createContactsText();
+createContactsTitle();
+phoneAndEmail();
+leaveAMessage();
 
 showContent();
