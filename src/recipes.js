@@ -41,7 +41,7 @@ const createActualRecipes = () => {
     recipesText.appendChild(actualRecipes)
 
     let j = 0;
-    while (j < 11) {
+    while (j < 7) {
         let recipeImage = document.createElement('div');
         recipeImage.className = `recipeImage ${j}`;
 
